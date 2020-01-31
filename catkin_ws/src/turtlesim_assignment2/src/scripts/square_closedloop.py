@@ -6,10 +6,6 @@ from turtlesim.msg import Pose
 import math
 import time
 
-X_min = 0.0
-Y_min = 0.0
-X_max = 11.0
-Y_max = 11.0
 
 x=0
 y=0
