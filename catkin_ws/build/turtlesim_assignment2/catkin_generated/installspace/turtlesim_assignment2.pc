@@ -1,0 +1,8 @@
+prefix=/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/install
+
+Name: turtlesim_assignment2
+Description: Description of turtlesim_assignment2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

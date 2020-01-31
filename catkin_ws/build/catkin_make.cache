@@ -1,0 +1,2 @@
+turtlesim_assignment2
+-DCATKIN_DEVEL_PREFIX=/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/install -G Unix Makefiles
