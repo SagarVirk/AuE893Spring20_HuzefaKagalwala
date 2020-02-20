@@ -32,4 +32,10 @@ Similarly, a launch file was created which launches ROS, Gazebo and the obstacle
 The initial lines of the software launches the world with the wall in Gazebo with the TurtleBot spawning at (0,0,0) in that world.
 The second part of the script launches the node to execute the script which will make the TurtleBot move in a straight line until it detects the wall (The TurtleBot will stop when it is 0.8m from the wall).
 
+The approach to achieve the obstacle detection is as follows:
+1. The FOv was mapped and restricted to 80 degrees (0 to 39 and 359 to 319).
+2. Rather than finding the middle point which works only for obstacles which are dead ahead of the bot when it is moving straight (no yaw) and/or the obstacle has no curvature, we find the minimum distance to the obstacle in that FOV. This helps us to incorporate any curvature in the obstacle or pose of the robot.
+
+To run this correctly, you will need to clone even the turtlebot3 package folders or place the **turtlebot3_wall.world** file provided in the "scripts folder" in the folder from where you call your gazebo worlds.
 To launch this script, run the following command: `roslaunch assignment3_turtlebot3 turtlebot3_wall.launch`.
+
