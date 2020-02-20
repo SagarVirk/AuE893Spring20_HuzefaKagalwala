@@ -65,8 +65,7 @@ def rotate(angular_speed, relative_angle, clockwise):
     t0 = rospy.Time.now().to_sec()
     loop_rate = rospy.Rate(10)
     # velocity publisher
-    velocity_publisher = rospy.Publisher(
-        "/turtle1/cmd_vel", Twist,  queue_size=10)
+    velocity_publisher = rospy.Publisher("/turtle1/cmd_vel", Twist,  queue_size=10)
 
     while True:
         velocity_publisher.publish(velocity_message)
@@ -174,7 +173,7 @@ def square_closedloop():
 
     # (8,5)
     pose4.x = 8
-    pose4.y = 8
+    pose4.y = 5
     pose4.theta = 0
     straight_line(2,3, False)
     loop.sleep()

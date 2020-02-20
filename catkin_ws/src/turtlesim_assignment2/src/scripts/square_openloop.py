@@ -8,7 +8,6 @@ def rotate(angular_speed, angle, Clockwise):
     vel_msg = Twist()
     #Converting from angles to radians
     relative_angle = angle*math.pi/180
-
     #We wont use linear components
     vel_msg.linear.x=0
     vel_msg.linear.y=0
@@ -24,12 +23,11 @@ def rotate(angular_speed, angle, Clockwise):
     # Setting the current time for distance calculus
     t0 = rospy.Time.now().to_sec()
     current_angle = 0.0
-
+   
     while (current_angle < relative_angle):
         velocity_publisher.publish(vel_msg)
         t1 = rospy.Time.now().to_sec()
         current_angle = angular_speed*(t1-t0)
-
 
     #Forcing our robot to stop
     vel_msg.angular.z = 0
@@ -37,7 +35,6 @@ def rotate(angular_speed, angle, Clockwise):
 
 def straight_line(speed, distance, isForward):
     # Starts a new node
-    #rospy.init_node('robot_cleaner', anonymous=True)
     velocity_publisher = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
     vel_msg = Twist()
 
@@ -54,7 +51,6 @@ def straight_line(speed, distance, isForward):
     vel_msg.angular.z = 0
 
     
-    rate = rospy.Rate(2)
     #Setting the current time for distance calculus
     t0 = rospy.Time.now().to_sec()
     current_distance = 0
@@ -67,7 +63,6 @@ def straight_line(speed, distance, isForward):
         t1=rospy.Time.now().to_sec()
         #Calculates distancePoseStamped
         current_distance= speed*(t1-t0)
-        rate.sleep()
     #After the loop, stops the robot
     vel_msg.linear.x = 0
     #Force the robot to stop
@@ -76,21 +71,13 @@ def straight_line(speed, distance, isForward):
 
 
 def square_openloop():
-    rate = rospy.Rate(0.5)
     straight_line(0.2,2,True)
-    rate.sleep()
     rotate(0.2,90,False)
-    rate.sleep()
     straight_line(0.2,2,True)
-    rate.sleep()
     rotate(0.2,90,False)
-    rate.sleep()
     straight_line(0.2,2,True)
-    rate.sleep()
     rotate(0.2,90,False)
-    rate.sleep()
     straight_line(0.2,2,True)
-    rate.sleep()
     rotate(0.2,90,False)
 
 

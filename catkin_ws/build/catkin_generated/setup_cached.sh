@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
-export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
 export PWD="/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/build"
-export ROS_PACKAGE_PATH="/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/src:/opt/ros/kinetic/share"
+export PYTHONPATH="/home/huzefa/AuE893Spring20_HuzefaKagalwala/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
