@@ -2,17 +2,17 @@
 
 Submitted on 02/20/2020, by Team 8:
 
-Mohammad Anas Imam Khan (C17566828), responsible for obstacle avoidance script and its launch file
-Prajval Vaskar (C20664702), responsible for the world file
-Sagar Virk (C20531221), responsible for the circle and square scripts and its launch file
-Huzefa Shabbir Hussain Kagalwala (C48290423), responsible for obstacle avoidance script and its launch file
-Adam Wagner (C10835588), responsible for the circle and square scripts and launch its file
+1. Mohammad Anas Imam Khan (C17566828), responsible for obstacle avoidance script and its launch file
+2. Prajval Vaskar (C20664702), responsible for the world file with the wall
+3. Sagar Virk (C20531221), responsible for the circle and square scripts and its launch file
+4. Huzefa Shabbir Hussain Kagalwala (C48290423), responsible for obstacle avoidance script and its launch file
+5. Adam Wagner (C10835588), responsible for the circle and square scripts and launch its file
 
-Even though these were the individual contributions, knowlede transfer has ensured that every team member is conversant with all the aspects of te assignment.
+Even though these were the individual contributions, knowledge transfer has ensured that every team member is conversant with all the aspects of te assignment.
 
 ## Part 1
 
-Part 1 required us to recreate the previous TurtleSim simulations in Gazebo.
+Part 1 required us to recreate the previous TurtleSim simulations in Gazebo using TurtleBot3 burger.
 
 Towards this end, a launch file called **move.launch** was created which launches ROS, Gazebo and the simulation script we want to run based on the argument "code".
 
@@ -32,4 +32,4 @@ Similarly, a launch file was created which launches ROS, Gazebo and the obstacle
 The initial lines of the software launches the world with the wall in Gazebo with the TurtleBot spawning at (0,0,0) in that world.
 The second part of the script launches the node to execute the script which will make the TurtleBot move in a straight line until it detects the wall (The TurtleBot will stop when it is 0.8m from the wall).
 
-To launch this script, run the following command: `roslaunch assignment3_turtlebot3 turtlebot3_wall.launch `.
+To launch this script, run the following command: `roslaunch assignment3_turtlebot3 turtlebot3_wall.launch`.
