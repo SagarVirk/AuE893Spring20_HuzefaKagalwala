@@ -4,8 +4,8 @@ Submitted on 02/20/2020, by Team 8:
 
 1. Mohammad Anas Imam Khan (C17566828), responsible for obstacle avoidance script and its launch file
 2. Prajval Vaskar (C20664702), responsible for the world file with the wall
-3. Sagar Virk (C20531221), responsible for the circle and square scripts and its launch file
-4. Huzefa Shabbir Hussain Kagalwala (C48290423), responsible for obstacle avoidance script and its launch file
+3. Sagar Virk (C20531221), responsible for obstacle avoidance script and its launch file
+4. Huzefa Shabbir Hussain Kagalwala (C48290423), responsible for the circle and square scripts and its launch file, assignment submission
 5. Adam Wagner (C10835588), responsible for the circle and square scripts and launch its file
 
 Even though these were the individual contributions, knowledge transfer has ensured that every team member is conversant with all the aspects of te assignment.
